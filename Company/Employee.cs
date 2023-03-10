@@ -106,5 +106,39 @@ namespace Company
 
             bal.DeleteEmployee(Employeeid);
         }
+
+        private void Employee_Load(object sender, EventArgs e)
+        {
+            PopulateCompanyDropdown();
+            PopulateDepartmentDropdown();
+          
+            ShowRecord();
+        }
+        public void PopulateCompanyDropdown()
+        {
+            CompanyBusiness bal = new CompanyBusiness();
+            DataTable CompanyTable = bal.GetCompany();
+            DataRow newRow = CompanyTable.NewRow();
+            newRow["CompanyId"] = 0;
+            newRow["CompanyName"] = "Please Select Company";
+            CompanyTable.Rows.InsertAt(newRow, 0);
+            cboCompanyId.DataSource = CompanyTable;
+            cboCompanyId.DisplayMember = "CompanyName";
+            cboCompanyId.ValueMember = "CompanyId";
+        }
+        public void PopulateDepartmentDropdown ()
+        {
+            DepartmentBusiness bal = new DepartmentBusiness();
+            DataTable DepartmentTable  = bal.GetDepartment();
+            DataRow newRow = DepartmentTable.NewRow();
+            newRow["DepartmentId"] = 0;
+            newRow["DepartmentName"] = "Please Select Department";
+            DepartmentTable.Rows.InsertAt(newRow, 0);
+            cboDepartmentId.DataSource = DepartmentTable;
+            cboDepartmentId.DisplayMember = "DepartmentName";
+            cboDepartmentId.ValueMember = "DepartmentId";
+        }
+       
+
     }
 }

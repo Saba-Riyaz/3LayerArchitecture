@@ -328,6 +328,7 @@
             this.Controls.Add(this.lblFirstName);
             this.Name = "Employee";
             this.Text = "Employee";
+            this.Load += new System.EventHandler(this.Employee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

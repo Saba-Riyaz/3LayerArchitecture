@@ -8,6 +8,8 @@ namespace DataLayer.Models
 {
     public class DepartmentEntity
     {
+        public int CompanyId   { get; set; }
+
         public int DepartmentId  { get; set; }
 
         public String DepartmentName  { get; set; }

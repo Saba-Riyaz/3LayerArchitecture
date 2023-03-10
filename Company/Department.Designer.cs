@@ -35,7 +35,7 @@
             this.btnBack = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.lblCompanyId = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbCompany = new System.Windows.Forms.ComboBox();
             this.dgvDepartment = new System.Windows.Forms.DataGridView();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
@@ -103,6 +103,7 @@
             this.label3.Size = new System.Drawing.Size(252, 43);
             this.label3.TabIndex = 5;
             this.label3.Text = "Departments";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // lblCompanyId
             // 
@@ -115,15 +116,15 @@
             this.lblCompanyId.TabIndex = 6;
             this.lblCompanyId.Text = "Company Id :";
             // 
-            // comboBox1
+            // cmbCompany
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.DarkGray;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(209, 108);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(377, 23);
-            this.comboBox1.TabIndex = 7;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cmbCompany.BackColor = System.Drawing.Color.DarkGray;
+            this.cmbCompany.FormattingEnabled = true;
+            this.cmbCompany.Location = new System.Drawing.Point(209, 108);
+            this.cmbCompany.Name = "cmbCompany";
+            this.cmbCompany.Size = new System.Drawing.Size(377, 23);
+            this.cmbCompany.TabIndex = 7;
+            this.cmbCompany.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // dgvDepartment
             // 
@@ -181,7 +182,7 @@
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.dgvDepartment);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbCompany);
             this.Controls.Add(this.lblCompanyId);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnBack);
@@ -207,7 +208,7 @@
         private Button btnBack;
         private Label label3;
         private Label lblCompanyId;
-        private ComboBox comboBox1;
+        private ComboBox cmbCompany;
         private DataGridView dgvDepartment;
         private Button btnSave;
         private Button btnEdit;

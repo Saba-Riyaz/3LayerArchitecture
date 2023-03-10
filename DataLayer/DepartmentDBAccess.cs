@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
+using System.ComponentModel.Design;
 
 namespace DataLayer
 {
@@ -20,6 +21,7 @@ namespace DataLayer
 
 
         }
+
        
 
      
@@ -30,8 +32,10 @@ namespace DataLayer
             SqlCommand cmd = Con.CreateCommand();
             cmd.CommandText = "Execute spInsertDepartment @DepartmentName";
 
+            cmd.Parameters.Add("@CompanyId", SqlDbType.Int).Value = departmententity.CompanyId ;
+
             cmd.Parameters.Add("@DepartmentName", SqlDbType.VarChar, 50).Value = departmententity.DepartmentName;
-           
+
 
 
             Con.Open();
@@ -86,7 +90,6 @@ namespace DataLayer
             cmd.CommandType = CommandType.StoredProcedure;
 
             // Add the parameters for the stored procedure
-            cmd.Parameters.AddWithValue("@", DepartmentId);
             cmd.Parameters.AddWithValue("@DepartmentId", DepartmentId);
 
 

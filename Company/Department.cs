@@ -1,6 +1,7 @@
 ﻿using Business;
 using DataLayer.Models;
 using NetTopologySuite.Mathematics;
+using Sitecore.FakeDb;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,7 +26,7 @@ namespace Company
         {
             DepartmentEntity entity = new DepartmentEntity();
             entity.DepartmentName = txtdepartmentName.Text;
-         
+
 
 
             DepartmentBusiness obj = new DepartmentBusiness();
@@ -40,14 +41,14 @@ namespace Company
         {
             txtDepartmentId.Text = "";
             txtdepartmentName.Text = "";
-     
+
 
         }
         public void ShowRecord()
         {
             DepartmentBusiness bal = new DepartmentBusiness();
 
-            DataTable DepartmentTable  = bal.GetDepartment();
+            DataTable DepartmentTable = bal.GetDepartment();
 
             dgvDepartment.DataSource = DepartmentTable;
 
@@ -57,7 +58,7 @@ namespace Company
             }
 
         }
-        public void DeleteDepartment (int Departmentid )
+        public void DeleteDepartment(int Departmentid)
         {
             Department bal = new Department();
 
@@ -69,7 +70,7 @@ namespace Company
             DepartmentEntity entity = new DepartmentEntity();
             entity.DepartmentId = Convert.ToInt32(txtDepartmentId.Text);
             entity.DepartmentName = txtdepartmentName.Text;
-          
+
 
             DepartmentBusiness obj = new DepartmentBusiness();
             obj.UpdateDepartment(entity);
@@ -102,9 +103,21 @@ namespace Company
 
         private void Department_Load(object sender, EventArgs e)
         {
+            PopulateCompanyDropdown();
             ShowRecord();
         }
-
+        public void PopulateCompanyDropdown()
+        {
+            CompanyBusiness bal = new CompanyBusiness();
+            DataTable CompanyTable = bal.GetCompany();
+            DataRow newRow = CompanyTable.NewRow();
+            newRow["CompanyId"] = 0;
+            newRow["CompanyName"] = "Please Select Company";
+            CompanyTable.Rows.InsertAt(newRow, 0);
+            cmbCompany.DataSource = CompanyTable;
+            cmbCompany.DisplayMember = "CompanyName";
+            cmbCompany.ValueMember = "CompanyId";
+        }
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -113,55 +126,20 @@ namespace Company
                 row.Selected = true;
                 txtDepartmentId.Text = row.Cells[0].Value.ToString();
                 txtdepartmentName.Text = row.Cells[1].Value.ToString();
-                
+
 
             }
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //SQLHelper sqlConnect = new SQLHelper();
-            //sqlConnect.DBConnection();
-            //try
-            //{
-            //    if (sqlConnect.con.State == ConnectionState.Closed)
-            //    {
-            //        sqlConnect.con.Open();
-            //    }
 
-            //    SqlCommand cmd = new SqlCommand("SELECT Role FROM tbl_IT_RoleDescription", sqlConnect.con);
-
-            //    using (SqlDataReader dr = cmd.ExecuteReader())
-            //    {
-            //        if (dr.HasRows)
-            //        {
-            //            while (dr.Read())
-            //            {
-            //                dd.Items.Add(dr["Role"].ToString());
-            //            }
-            //        }
-            //        dr.Close();
-            //    }
-            //    sqlConnect.Con.Close();
-
-            //    DD.SelectedIndex = 0;
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show("Error : " + ex.Message + "\n\nSend this issue to EUC Dev Team?", "Intake Tool", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
-            //    sqlConnect.Con.Close();
-            //    ;
-            //}
         }
-    }
 
-    class SQLHelper
-    {
-        internal object con;
-
-        internal void DBConnection()
+        private void label3_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+
         }
     }
 }
+
