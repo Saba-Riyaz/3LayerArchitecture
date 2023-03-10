@@ -32,6 +32,16 @@ namespace DataLayer
             SqlCommand cmd = Con.CreateCommand();
             cmd.CommandText = "Execute spInsertDepartment @CompanyId ,@DepartmentName";
 
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             cmd.Parameters.Add("@CompanyId", SqlDbType.Int).Value = departmententity.CompanyId ;
 
             cmd.Parameters.Add("@DepartmentName", SqlDbType.VarChar, 50).Value = departmententity.DepartmentName;

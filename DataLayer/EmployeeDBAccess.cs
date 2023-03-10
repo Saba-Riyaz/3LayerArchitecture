@@ -22,8 +22,10 @@ namespace DataLayer
         {
 
             SqlCommand cmd = Con.CreateCommand();
-            cmd.CommandText = "Execute spInsertEmployee @FirstName , @LastName, @Email, @Phone, @Salary , @Address";
+            cmd.CommandText = "Execute spInsertEmployee @CompanyId , @DepartmentId,@FirstName , @LastName, @Email, @Phone, @Salary , @Address";
 
+            cmd.Parameters.Add("@CompanyId", SqlDbType.Int).Value = employeeentity.CompanyId;
+            cmd.Parameters.Add("@DepartmentId", SqlDbType.Int).Value = employeeentity.DepartmentId ;
             cmd.Parameters.Add("@FirstName", SqlDbType.VarChar, 50).Value = employeeentity.FirstName;
             cmd.Parameters.Add("@LastName", SqlDbType.VarChar, 50).Value = employeeentity.LastName;
             cmd.Parameters.Add("@Email", SqlDbType.VarChar, 50).Value = employeeentity.Email;

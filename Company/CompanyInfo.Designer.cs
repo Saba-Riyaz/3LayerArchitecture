@@ -186,9 +186,9 @@
             // 
             // dgvCompany
             // 
-            this.dgvCompany.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgvCompany.BackgroundColor = System.Drawing.Color.White;
             this.dgvCompany.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCompany.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.dgvCompany.GridColor = System.Drawing.Color.White;
             this.dgvCompany.Location = new System.Drawing.Point(12, 395);
             this.dgvCompany.Name = "dgvCompany";
             this.dgvCompany.RowTemplate.Height = 25;
