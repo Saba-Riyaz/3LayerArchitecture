@@ -1,0 +1,15 @@
+D:\Assesment\Business\obj\Debug\net6.0-windows\Business.csproj.AssemblyReference.cache
+D:\Assesment\Business\obj\Debug\net6.0-windows\Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assesment\Business\obj\Debug\net6.0-windows\Business.AssemblyInfoInputs.cache
+D:\Assesment\Business\obj\Debug\net6.0-windows\Business.AssemblyInfo.cs
+D:\Assesment\Business\obj\Debug\net6.0-windows\Business.csproj.CoreCompileInputs.cache
+D:\Assesment\Business\bin\Debug\net6.0-windows\Business.deps.json
+D:\Assesment\Business\bin\Debug\net6.0-windows\Business.dll
+D:\Assesment\Business\bin\Debug\net6.0-windows\Business.pdb
+D:\Assesment\Business\bin\Debug\net6.0-windows\DataLayer.dll
+D:\Assesment\Business\bin\Debug\net6.0-windows\DataLayer.pdb
+D:\Assesment\Business\obj\Debug\net6.0-windows\Business.csproj.CopyComplete
+D:\Assesment\Business\obj\Debug\net6.0-windows\Business.dll
+D:\Assesment\Business\obj\Debug\net6.0-windows\refint\Business.dll
+D:\Assesment\Business\obj\Debug\net6.0-windows\Business.pdb
+D:\Assesment\Business\obj\Debug\net6.0-windows\ref\Business.dll
