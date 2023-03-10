@@ -29,3 +29,5 @@ D:\Assesment\Company\obj\Debug\net6.0-windows\refint\Company.dll
 D:\Assesment\Company\obj\Debug\net6.0-windows\Company.pdb
 D:\Assesment\Company\obj\Debug\net6.0-windows\Company.genruntimeconfig.cache
 D:\Assesment\Company\obj\Debug\net6.0-windows\ref\Company.dll
+D:\Assesment\Company\bin\Debug\net6.0-windows\NetTopologySuite.dll
+D:\Assesment\Company\bin\Debug\net6.0-windows\Sitecore.FakeDb.dll

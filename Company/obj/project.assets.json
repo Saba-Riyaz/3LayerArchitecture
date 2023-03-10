@@ -38,6 +38,22 @@
           }
         }
       },
+      "NetTopologySuite/2.5.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetTopologySuite.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -73,6 +89,19 @@
           }
         }
       },
+      "Sitecore.FakeDb/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net471/Sitecore.FakeDb.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net471/Sitecore.FakeDb.dll": {
+            "related": ".XML"
+          }
+        }
+      },
       "System.Data.SqlClient/4.8.5": {
         "type": "package",
         "dependencies": {
@@ -99,6 +128,15 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "System.Memory/4.5.4": {
+        "type": "package",
+        "compile": {
+          "ref/netcoreapp2.1/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/_._": {}
         }
       },
       "System.Security.AccessControl/4.7.0": {
@@ -151,7 +189,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "DataLayer": "1.0.0"
+          "DataLayer": "1.0.0",
+          "Sitecore.FakeDb": "2.0.1"
         },
         "compile": {
           "bin/placeholder/Business.dll": {}
@@ -246,6 +285,20 @@
         "version.txt"
       ]
     },
+    "NetTopologySuite/2.5.0": {
+      "sha512": "5/+2O2ADomEdUn09mlSigACdqvAf0m/pVPGtIPEPQWnyrVykYY0NlfXLIdkMgi41kvH9kNrPqYaFBTZtHYH7Xw==",
+      "type": "package",
+      "path": "nettopologysuite/2.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/NetTopologySuite.dll",
+        "lib/netstandard2.0/NetTopologySuite.xml",
+        "nettopologysuite.2.5.0.nupkg.sha512",
+        "nettopologysuite.nuspec"
+      ]
+    },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "sha512": "9kyFSIdN3T0qjDQ2R0HRXYIhS3l5psBzQi6qqhdLz+SzFyEy4sVxNOke+yyYv8Cu8rPER12c3RDjLT8wF3WBYQ==",
       "type": "package",
@@ -307,6 +360,20 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Sitecore.FakeDb/2.0.1": {
+      "sha512": "O12Ob0aM6juOaIBARnljS2TfvqyVZYdWN00mK+IajcvF3y2r5zWeUgTbltpCpSY/YjElIBXM5zZjJr2eeRB4HA==",
+      "type": "package",
+      "path": "sitecore.fakedb/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/App.config",
+        "lib/net471/Sitecore.FakeDb.XML",
+        "lib/net471/Sitecore.FakeDb.dll",
+        "sitecore.fakedb.2.0.1.nupkg.sha512",
+        "sitecore.fakedb.nuspec"
       ]
     },
     "System.Data.SqlClient/4.8.5": {
@@ -391,6 +458,29 @@
         "runtimes/win/lib/uap10.0.16299/System.Data.SqlClient.xml",
         "system.data.sqlclient.4.8.5.nupkg.sha512",
         "system.data.sqlclient.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Memory/4.5.4": {
+      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "type": "package",
+      "path": "system.memory/4.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Memory.dll",
+        "lib/net461/System.Memory.xml",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "system.memory.4.5.4.nupkg.sha512",
+        "system.memory.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -509,7 +599,8 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "Business >= 1.0.0",
-      "DataLayer >= 1.0.0"
+      "DataLayer >= 1.0.0",
+      "NetTopologySuite >= 2.5.0"
     ]
   },
   "packageFolders": {
@@ -557,6 +648,12 @@
     "frameworks": {
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "NetTopologySuite": {
+            "target": "Package",
+            "version": "[2.5.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -579,5 +676,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Sitecore.FakeDb 2.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Sitecore.FakeDb",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }

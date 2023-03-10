@@ -6,6 +6,8 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
+using Sitecore.FakeDb;
 
 namespace Business
 {
@@ -16,6 +18,13 @@ namespace Business
         public DepartmentBusiness ()
         {
 
+        }
+        public void getRole(ComboBox cmbUserRole)
+        {
+            //SqlCommand cmd = new SqlCommand();
+            //cmd.CommandType = CommandType.Text;
+            //cmd.CommandText = "SELECT Role FROM tbl_IT_RoleDescription";
+            //Db.exeReader(cmd);
         }
         public void SaveDepartment (DepartmentEntity entity)
         {

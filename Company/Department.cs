@@ -1,10 +1,12 @@
 ﻿using Business;
 using DataLayer.Models;
+using NetTopologySuite.Mathematics;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.Design;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -114,6 +116,52 @@ namespace Company
                 
 
             }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //SQLHelper sqlConnect = new SQLHelper();
+            //sqlConnect.DBConnection();
+            //try
+            //{
+            //    if (sqlConnect.con.State == ConnectionState.Closed)
+            //    {
+            //        sqlConnect.con.Open();
+            //    }
+
+            //    SqlCommand cmd = new SqlCommand("SELECT Role FROM tbl_IT_RoleDescription", sqlConnect.con);
+
+            //    using (SqlDataReader dr = cmd.ExecuteReader())
+            //    {
+            //        if (dr.HasRows)
+            //        {
+            //            while (dr.Read())
+            //            {
+            //                dd.Items.Add(dr["Role"].ToString());
+            //            }
+            //        }
+            //        dr.Close();
+            //    }
+            //    sqlConnect.Con.Close();
+
+            //    DD.SelectedIndex = 0;
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Error : " + ex.Message + "\n\nSend this issue to EUC Dev Team?", "Intake Tool", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
+            //    sqlConnect.Con.Close();
+            //    ;
+            //}
+        }
+    }
+
+    class SQLHelper
+    {
+        internal object con;
+
+        internal void DBConnection()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -36,23 +36,23 @@
             this.lblPhone = new System.Windows.Forms.Label();
             this.lblEmployeeId = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
+            this.txtSalary = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtEmployeeId = new System.Windows.Forms.TextBox();
             this.lblCompanyId = new System.Windows.Forms.Label();
             this.lblDepartmentId = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.btnBack = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvEmployee = new System.Windows.Forms.DataGridView();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFirstName
@@ -135,69 +135,69 @@
             this.label9.TabIndex = 8;
             this.label9.Text = "Employees";
             // 
-            // textBox1
+            // txtAddress
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Silver;
-            this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox1.Location = new System.Drawing.Point(237, 439);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(378, 23);
-            this.textBox1.TabIndex = 9;
+            this.txtAddress.BackColor = System.Drawing.Color.Silver;
+            this.txtAddress.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtAddress.Location = new System.Drawing.Point(237, 439);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(378, 23);
+            this.txtAddress.TabIndex = 9;
             // 
-            // textBox2
+            // txtSalary
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Silver;
-            this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox2.Location = new System.Drawing.Point(237, 395);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(378, 23);
-            this.textBox2.TabIndex = 10;
+            this.txtSalary.BackColor = System.Drawing.Color.Silver;
+            this.txtSalary.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtSalary.Location = new System.Drawing.Point(237, 395);
+            this.txtSalary.Name = "txtSalary";
+            this.txtSalary.Size = new System.Drawing.Size(378, 23);
+            this.txtSalary.TabIndex = 10;
             // 
-            // textBox3
+            // txtPhone
             // 
-            this.textBox3.BackColor = System.Drawing.Color.Silver;
-            this.textBox3.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox3.Location = new System.Drawing.Point(237, 353);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(378, 23);
-            this.textBox3.TabIndex = 11;
+            this.txtPhone.BackColor = System.Drawing.Color.Silver;
+            this.txtPhone.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtPhone.Location = new System.Drawing.Point(237, 353);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.Size = new System.Drawing.Size(378, 23);
+            this.txtPhone.TabIndex = 11;
             // 
-            // textBox4
+            // txtEmail
             // 
-            this.textBox4.BackColor = System.Drawing.Color.Silver;
-            this.textBox4.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox4.Location = new System.Drawing.Point(237, 312);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(378, 23);
-            this.textBox4.TabIndex = 12;
+            this.txtEmail.BackColor = System.Drawing.Color.Silver;
+            this.txtEmail.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtEmail.Location = new System.Drawing.Point(237, 312);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(378, 23);
+            this.txtEmail.TabIndex = 12;
             // 
-            // textBox5
+            // txtLastName
             // 
-            this.textBox5.BackColor = System.Drawing.Color.Silver;
-            this.textBox5.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox5.Location = new System.Drawing.Point(237, 270);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(378, 23);
-            this.textBox5.TabIndex = 13;
+            this.txtLastName.BackColor = System.Drawing.Color.Silver;
+            this.txtLastName.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtLastName.Location = new System.Drawing.Point(237, 270);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(378, 23);
+            this.txtLastName.TabIndex = 13;
             // 
-            // textBox6
+            // txtFirstName
             // 
-            this.textBox6.BackColor = System.Drawing.Color.Silver;
-            this.textBox6.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox6.Location = new System.Drawing.Point(237, 229);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(378, 23);
-            this.textBox6.TabIndex = 14;
+            this.txtFirstName.BackColor = System.Drawing.Color.Silver;
+            this.txtFirstName.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtFirstName.Location = new System.Drawing.Point(237, 229);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(378, 23);
+            this.txtFirstName.TabIndex = 14;
             // 
-            // textBox7
+            // txtEmployeeId
             // 
-            this.textBox7.BackColor = System.Drawing.Color.Silver;
-            this.textBox7.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.textBox7.Location = new System.Drawing.Point(237, 185);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(378, 23);
-            this.textBox7.TabIndex = 15;
+            this.txtEmployeeId.BackColor = System.Drawing.Color.Silver;
+            this.txtEmployeeId.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.txtEmployeeId.Location = new System.Drawing.Point(237, 185);
+            this.txtEmployeeId.Name = "txtEmployeeId";
+            this.txtEmployeeId.ReadOnly = true;
+            this.txtEmployeeId.Size = new System.Drawing.Size(378, 23);
+            this.txtEmployeeId.TabIndex = 15;
             // 
             // lblCompanyId
             // 
@@ -248,15 +248,16 @@
             this.btnBack.TabIndex = 20;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // dataGridView1
+            // dgvEmployee
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 523);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 224);
-            this.dataGridView1.TabIndex = 21;
+            this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmployee.Location = new System.Drawing.Point(12, 523);
+            this.dgvEmployee.Name = "dgvEmployee";
+            this.dgvEmployee.RowTemplate.Height = 25;
+            this.dgvEmployee.Size = new System.Drawing.Size(776, 224);
+            this.dgvEmployee.TabIndex = 21;
             // 
             // btnDelete
             // 
@@ -268,6 +269,7 @@
             this.btnDelete.TabIndex = 22;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
@@ -279,6 +281,7 @@
             this.btnEdit.TabIndex = 23;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnSave
             // 
@@ -290,6 +293,7 @@
             this.btnSave.TabIndex = 24;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // Employee
             // 
@@ -300,19 +304,19 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvEmployee);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.lblDepartmentId);
             this.Controls.Add(this.lblCompanyId);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtEmployeeId);
+            this.Controls.Add(this.txtFirstName);
+            this.Controls.Add(this.txtLastName);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtPhone);
+            this.Controls.Add(this.txtSalary);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lblEmployeeId);
             this.Controls.Add(this.lblPhone);
@@ -323,7 +327,7 @@
             this.Controls.Add(this.lblFirstName);
             this.Name = "Employee";
             this.Text = "Employee";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,19 +343,19 @@
         private Label lblPhone;
         private Label lblEmployeeId;
         private Label label9;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
+        private TextBox txtAddress;
+        private TextBox txtSalary;
+        private TextBox txtPhone;
+        private TextBox txtEmail;
+        private TextBox txtLastName;
+        private TextBox txtFirstName;
+        private TextBox txtEmployeeId;
         private Label lblCompanyId;
         private Label lblDepartmentId;
         private ComboBox comboBox1;
         private ComboBox comboBox2;
         private Button btnBack;
-        private DataGridView dataGridView1;
+        private DataGridView dgvEmployee;
         private Button btnDelete;
         private Button btnEdit;
         private Button btnSave;

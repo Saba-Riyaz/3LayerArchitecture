@@ -9,7 +9,8 @@
       "Company/1.0.0": {
         "dependencies": {
           "Business": "1.0.0",
-          "DataLayer": "1.0.0"
+          "DataLayer": "1.0.0",
+          "NetTopologySuite": "2.5.0"
         },
         "runtime": {
           "Company.dll": {}
@@ -20,6 +21,17 @@
         "dependencies": {
           "System.Security.AccessControl": "4.7.0",
           "System.Security.Principal.Windows": "4.7.0"
+        }
+      },
+      "NetTopologySuite/2.5.0": {
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetTopologySuite.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
         }
       },
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
@@ -56,6 +68,14 @@
           }
         }
       },
+      "Sitecore.FakeDb/2.0.1": {
+        "runtime": {
+          "lib/net471/Sitecore.FakeDb.dll": {
+            "assemblyVersion": "2.0.1.0",
+            "fileVersion": "2.0.1.0"
+          }
+        }
+      },
       "System.Data.SqlClient/4.8.5": {
         "dependencies": {
           "Microsoft.Win32.Registry": "4.7.0",
@@ -83,6 +103,7 @@
           }
         }
       },
+      "System.Memory/4.5.4": {},
       "System.Security.AccessControl/4.7.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -92,7 +113,8 @@
       "System.Security.Principal.Windows/4.7.0": {},
       "Business/1.0.0": {
         "dependencies": {
-          "DataLayer": "1.0.0"
+          "DataLayer": "1.0.0",
+          "Sitecore.FakeDb": "2.0.1"
         },
         "runtime": {
           "Business.dll": {}
@@ -128,6 +150,13 @@
       "path": "microsoft.win32.registry/4.7.0",
       "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
     },
+    "NetTopologySuite/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5/+2O2ADomEdUn09mlSigACdqvAf0m/pVPGtIPEPQWnyrVykYY0NlfXLIdkMgi41kvH9kNrPqYaFBTZtHYH7Xw==",
+      "path": "nettopologysuite/2.5.0",
+      "hashPath": "nettopologysuite.2.5.0.nupkg.sha512"
+    },
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -156,12 +185,26 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
+    "Sitecore.FakeDb/2.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O12Ob0aM6juOaIBARnljS2TfvqyVZYdWN00mK+IajcvF3y2r5zWeUgTbltpCpSY/YjElIBXM5zZjJr2eeRB4HA==",
+      "path": "sitecore.fakedb/2.0.1",
+      "hashPath": "sitecore.fakedb.2.0.1.nupkg.sha512"
+    },
     "System.Data.SqlClient/4.8.5": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-fRqxut4lrndPHrXD+ht1XRmCL3obuKldm4XjCRYS9p5f7FSR7shBxAwTkDrpFMsHC9BhNgjjmUtiIjvehn5zkg==",
       "path": "system.data.sqlclient/4.8.5",
       "hashPath": "system.data.sqlclient.4.8.5.nupkg.sha512"
+    },
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
     },
     "System.Security.AccessControl/4.7.0": {
       "type": "package",
