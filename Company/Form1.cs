@@ -21,5 +21,12 @@ namespace Company
             form2.Show();
             this.Hide();
         }
+
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
+            Employee form2 = new Employee();
+            form2.Show();
+            this.Hide();
+        }
     }
 }

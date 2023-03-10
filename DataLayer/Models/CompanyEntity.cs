@@ -17,6 +17,6 @@ namespace DataLayer.Models
         public String CompanyCity  { get; set; }
         public String CompanyWebsite { get; set; }
         public String CompanyEmial  { get; set; }
-        public string CompanyEmail { get; set; }
+        public String CompanyEmail { get; set; }
     }
 }

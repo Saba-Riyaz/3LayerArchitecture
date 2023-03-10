@@ -58,6 +58,8 @@ namespace DataLayer
             SqlCommand cmd = new SqlCommand("spUpdateData", Con);
             cmd.CommandType = CommandType.StoredProcedure;
 
+            cmd.Parameters.Add("@CompanyId", SqlDbType.Int).Value = companyentity.CompanyId;
+
             cmd.Parameters.Add("@CompanyName", SqlDbType.VarChar, 50).Value = companyentity.CompanyName;
             cmd.Parameters.Add("@CompanyAddress", SqlDbType.VarChar, int.MaxValue).Value = companyentity.CompanyAddress;
             cmd.Parameters.Add("@CompanyCity", SqlDbType.VarChar, 50).Value = companyentity.CompanyCity;

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Assesment\\DataLayer\\DataLayer.csproj": {}
+    "D:\\AssesmentCruds\\Assesment\\Assesment\\Assesment\\DataLayer\\DataLayer.csproj": {}
   },
   "projects": {
-    "D:\\Assesment\\DataLayer\\DataLayer.csproj": {
+    "D:\\AssesmentCruds\\Assesment\\Assesment\\Assesment\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Assesment\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "D:\\AssesmentCruds\\Assesment\\Assesment\\Assesment\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "D:\\Assesment\\DataLayer\\DataLayer.csproj",
+        "projectPath": "D:\\AssesmentCruds\\Assesment\\Assesment\\Assesment\\DataLayer\\DataLayer.csproj",
         "packagesPath": "C:\\Users\\sriaz\\.nuget\\packages\\",
-        "outputPath": "D:\\Assesment\\DataLayer\\obj\\",
+        "outputPath": "D:\\AssesmentCruds\\Assesment\\Assesment\\Assesment\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sriaz\\AppData\\Roaming\\NuGet\\NuGet.Config",

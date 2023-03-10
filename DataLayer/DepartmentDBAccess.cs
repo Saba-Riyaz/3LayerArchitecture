@@ -20,28 +20,7 @@ namespace DataLayer
 
 
         }
-        //public DataTable exeReader(SqlCommand cmd)
-        //{
-        //    DataTable dt = new DataTable();
-        //    try
-        //    {
-        //        cmd.Connection = getCon();
-        //        SqlDataReader dr;
-
-        //        dr = cmd.ExecuteReader();
-        //        dt.Load(dr);
-        //        Con.Close();
-                
-
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show("Error : " + ex.Message + "\n\nSend this issue to EUC Dev Team?", "Intake Tool", MessageBoxButtons.YesNo, MessageBoxIcon.Error);
-        //        Con.Close();
-                
-        //    }
-        //    return dt;
-        //}
+       
 
      
 

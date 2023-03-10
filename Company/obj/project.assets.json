@@ -609,11 +609,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Assesment\\Company\\Company.csproj",
+      "projectUniqueName": "D:\\AssesmentCruds\\Assesment\\Assesment\\Assesment\\Company\\Company.csproj",
       "projectName": "Company",
-      "projectPath": "D:\\Assesment\\Company\\Company.csproj",
+      "projectPath": "D:\\AssesmentCruds\\Assesment\\Assesment\\Assesment\\Company\\Company.csproj",
       "packagesPath": "C:\\Users\\sriaz\\.nuget\\packages\\",
-      "outputPath": "D:\\Assesment\\Company\\obj\\",
+      "outputPath": "D:\\AssesmentCruds\\Assesment\\Assesment\\Assesment\\Company\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sriaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -630,11 +630,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "D:\\Assesment\\Business\\Business.csproj": {
-              "projectPath": "D:\\Assesment\\Business\\Business.csproj"
+            "D:\\AssesmentCruds\\Assesment\\Assesment\\Assesment\\Business\\Business.csproj": {
+              "projectPath": "D:\\AssesmentCruds\\Assesment\\Assesment\\Assesment\\Business\\Business.csproj"
             },
-            "D:\\Assesment\\DataLayer\\DataLayer.csproj": {
-              "projectPath": "D:\\Assesment\\DataLayer\\DataLayer.csproj"
+            "D:\\AssesmentCruds\\Assesment\\Assesment\\Assesment\\DataLayer\\DataLayer.csproj": {
+              "projectPath": "D:\\AssesmentCruds\\Assesment\\Assesment\\Assesment\\DataLayer\\DataLayer.csproj"
             }
           }
         }

@@ -524,11 +524,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Assesment\\Business\\Business.csproj",
+      "projectUniqueName": "D:\\AssesmentCruds\\Assesment\\Assesment\\Assesment\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "D:\\Assesment\\Business\\Business.csproj",
+      "projectPath": "D:\\AssesmentCruds\\Assesment\\Assesment\\Assesment\\Business\\Business.csproj",
       "packagesPath": "C:\\Users\\sriaz\\.nuget\\packages\\",
-      "outputPath": "D:\\Assesment\\Business\\obj\\",
+      "outputPath": "D:\\AssesmentCruds\\Assesment\\Assesment\\Assesment\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sriaz\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -545,8 +545,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "D:\\Assesment\\DataLayer\\DataLayer.csproj": {
-              "projectPath": "D:\\Assesment\\DataLayer\\DataLayer.csproj"
+            "D:\\AssesmentCruds\\Assesment\\Assesment\\Assesment\\DataLayer\\DataLayer.csproj": {
+              "projectPath": "D:\\AssesmentCruds\\Assesment\\Assesment\\Assesment\\DataLayer\\DataLayer.csproj"
             }
           }
         }

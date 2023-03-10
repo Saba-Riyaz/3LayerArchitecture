@@ -45,8 +45,8 @@
             this.txtEmployeeId = new System.Windows.Forms.TextBox();
             this.lblCompanyId = new System.Windows.Forms.Label();
             this.lblDepartmentId = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboDepartmentId = new System.Windows.Forms.ComboBox();
+            this.cboCompanyId = new System.Windows.Forms.ComboBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.dgvEmployee = new System.Windows.Forms.DataGridView();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -219,25 +219,25 @@
             this.lblDepartmentId.TabIndex = 17;
             this.lblDepartmentId.Text = "Department Id :";
             // 
-            // comboBox1
+            // cboDepartmentId
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.Silver;
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(237, 148);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(378, 23);
-            this.comboBox1.TabIndex = 18;
+            this.cboDepartmentId.BackColor = System.Drawing.Color.Silver;
+            this.cboDepartmentId.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.cboDepartmentId.FormattingEnabled = true;
+            this.cboDepartmentId.Location = new System.Drawing.Point(237, 148);
+            this.cboDepartmentId.Name = "cboDepartmentId";
+            this.cboDepartmentId.Size = new System.Drawing.Size(378, 23);
+            this.cboDepartmentId.TabIndex = 18;
             // 
-            // comboBox2
+            // cboCompanyId
             // 
-            this.comboBox2.BackColor = System.Drawing.Color.Silver;
-            this.comboBox2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(237, 108);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(378, 23);
-            this.comboBox2.TabIndex = 19;
+            this.cboCompanyId.BackColor = System.Drawing.Color.Silver;
+            this.cboCompanyId.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.cboCompanyId.FormattingEnabled = true;
+            this.cboCompanyId.Location = new System.Drawing.Point(237, 108);
+            this.cboCompanyId.Name = "cboCompanyId";
+            this.cboCompanyId.Size = new System.Drawing.Size(378, 23);
+            this.cboCompanyId.TabIndex = 19;
             // 
             // btnBack
             // 
@@ -253,6 +253,7 @@
             // dgvEmployee
             // 
             this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmployee.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgvEmployee.Location = new System.Drawing.Point(12, 523);
             this.dgvEmployee.Name = "dgvEmployee";
             this.dgvEmployee.RowTemplate.Height = 25;
@@ -306,8 +307,8 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.dgvEmployee);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboCompanyId);
+            this.Controls.Add(this.cboDepartmentId);
             this.Controls.Add(this.lblDepartmentId);
             this.Controls.Add(this.lblCompanyId);
             this.Controls.Add(this.txtEmployeeId);
@@ -352,8 +353,8 @@
         private TextBox txtEmployeeId;
         private Label lblCompanyId;
         private Label lblDepartmentId;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private ComboBox cboDepartmentId;
+        private ComboBox cboCompanyId;
         private Button btnBack;
         private DataGridView dgvEmployee;
         private Button btnDelete;
