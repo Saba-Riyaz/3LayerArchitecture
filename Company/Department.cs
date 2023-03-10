@@ -25,6 +25,7 @@ namespace Company
         public void SaveDepartment()
         {
             DepartmentEntity entity = new DepartmentEntity();
+            entity.CompanyId =Convert.ToInt32( cmbCompany.SelectedValue);
             entity.DepartmentName = txtdepartmentName.Text;
 
 
